@@ -6,10 +6,10 @@
 ## Setup
 -----------------
 
-### Supported Operating Systems
+#### Supported Operating Systems
 * Linux, Solaris (untested on other Unix flavors)
 
-### Supported Browsers
+#### Supported Browsers
 * Mozilla Firefox 2 or higher
 * Internet Explorer 6 or higher
 * Safari
