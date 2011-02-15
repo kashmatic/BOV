@@ -40,27 +40,30 @@
 ### Database Setup 
 BOV requires a MySQL database to store data and generate results. By default, BOV will connect to MySQL installed on the local machine, using the username bov, and the database name microbial. To setup BOV with these default settings, issue the following commands from the unix command prompt.
 
-    * To create the username bov, without password
+To create the username bov, without password
+
     mysql -uroot -p password -e 'create user bov@localhost'
 
-    * With password
+With password
+
     mysql -uroot -p password -e 'create user bov@localhost identified by password'
 
-* To create the database and give permissions to your user
+To create the database and give permissions to your user
+    
     mysql -uroot -p password -e 'create database microbial'
     mysql -uroot -p password -e 'grant select,insert,create,drop on microbial.* to bov@localhost'
 
-###### If you want to use different database settings, reference the MySQL documentation for instructions on how to configure the database.
+If you want to use different database settings, reference the MySQL documentation for instructions on how to configure the database.
 
 
-### Installation
+#### Installation
 ------------
 
 1. Download BOV from http://cgb.indiana.edu/files/downloads/Blast_Output_Viewer.tar.gz
 
 2. Uncompress BOV using the command 
 
-    tar -zxvf Blast_Output_Viewer.tar.gz
+    `tar -zxvf Blast_Output_Viewer.tar.gz`
 
 3. Edit the setup.sh to customize BOV for your location. You must set the parameters under "REQUIRED PARAMETERS". If you did not use the default database settings, you must also define the connection information under "OPTIONAL PARAMETERS".
 
