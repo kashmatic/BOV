@@ -1,0 +1,12 @@
+* Publication
+Gollapudi, R., Revanna, K.V., Hemmerich, C., Schaack, S. & Dong, Q. (2008) BOV- A Web-based BLAST Output Visualization Tool. BMC Genomics 9, 414. This little toy was ranked as a "Highly accessed" paper by BioMed Central.
+PUBMED link: http://www.ncbi.nlm.nih.gov/pubmed/18793422
+
+* Background
+The BLAST program is one of the most widely used sequence similarity search tools for genomic research, even by those biologists lacking extensive bioinformatics training. As the availability of sequence data increases, more researchers are downloading the BLAST program for local installation and performing larger and more complex tasks, including batch queries. In order to manage and interpret the results of batch queries, a host of software packages have been developed to assist with data management and post-processing. Among these programs, there is almost a complete lack of visualization tools to provide graphic representation of complex BLAST pair-wise alignments. We have developed a web-based program, BLAST Output Visualization Tool (BOV), that allows users to interactively visualize the matching regions of query and database hit sequences, thereby allowing the user to quickly and easily dissect complex matching patterns.
+
+* Results
+Users can upload the standard BLAST output in pair-wise alignment format as input to the web server (including batch queries generated installing and running the stand-alone BLAST program on a local server). The program extracts the alignment coordinates of matching regions between the query and the corresponding database hit sequence. The coordinates are used to plot each matching region as colored lines or trapezoids. Using the straightforward control panels throughout the web site, each plotted matching region can be easily explored in detail by, for example, highlighting the region of interest or examining the raw pair-wise sequence alignment. Tutorials are provided at the website to guide users step-by-step through the functional features of BOV.
+
+* Conclusion
+BOV provides a user-friendly web interface to visualize the standard BLAST output for investigating wide-ranging genomic problems, including single query and batch query datasets. In particular, this software is valuable to users interested in identifying regions of co-linearity, duplication, translocation, and inversion among sequences. A web server hosting BOV is accessible via http://bioportal.cgb.indiana.edu/cgi-bin/BOV/index.cgi and the software is freely available for local installations.
