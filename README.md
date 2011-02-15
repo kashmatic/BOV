@@ -15,19 +15,19 @@
 * Safari
 * Opera
 
-### Prequisites
+#### Prequisites
 * Apache 1.3 or 2.0 ( http://www.apache.org )
 * MySQL Database ( http://dev.mysql.com/ )
 * BioPerl 1.5.2 or higher ( http://www.bioperl.org/ )
 
-### CPAN Perl Modules (can be downloaded from CPAN archive at http://www.cpan.org)
+#### CPAN Perl Modules (can be downloaded from CPAN archive at http://www.cpan.org)
 * DBI
 * DBD::mysql
 * HTML::Template
 * GD
 * CGI::Ajax
 
-### Core Perl Modules
+#### Core Perl Modules
 * CGI
 * CGI::Carp
 * Data::Dumper
@@ -38,11 +38,12 @@
 * Storable
 
 ### Database Setup 
-###### BOV requires a MySQL database to store data and generate results. By default, BOV will connect to MySQL installed on the local machine, using the username bov, and the database name microbial. To setup BOV with these default settings, issue the following commands from the unix command prompt.
+BOV requires a MySQL database to store data and generate results. By default, BOV will connect to MySQL installed on the local machine, using the username bov, and the database name microbial. To setup BOV with these default settings, issue the following commands from the unix command prompt.
 
-* To create the username bov, without password
+    * To create the username bov, without password
     mysql -uroot -p password -e 'create user bov@localhost'
-* With password
+
+    * With password
     mysql -uroot -p password -e 'create user bov@localhost identified by password'
 
 * To create the database and give permissions to your user
