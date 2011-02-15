@@ -1,0 +1,326 @@
+@charset "utf-8";
+/*
+ * #########################################################
+ * ## Copyright 2008 The Trustees of Indiana University
+ * ##
+ * ## Licensed under the Apache License, Version 2.0 (the "License");
+ * ## you may not use this file except in compliance with the License.
+ * ## You may obtain a copy of the License at
+ * ##
+ * ##      http://www.apache.org/licenses/LICENSE-2.0
+ * ##
+ * ## Unless required by applicable law or agreed to in writing, software
+ * ## distributed under the License is distributed on an "AS IS" BASIS,
+ * ## WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * ## See the License for the specific language governing permissions and
+ * ## limitations under the License.
+ * #########################################################
+ * */
+
+#header {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:64px;
+	z-index:1;
+	background-color: #007575;
+}
+#cgb_logo {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:75px;
+	height:70px;
+	z-index:2;
+	padding: 0px;
+}
+#bov_logo {
+	position:absolute;
+	left:90px;
+	top:15px;
+	width:500px;
+	height:50px;
+	z-index:3;
+	bottom: 15px;
+	background-color: #007575;
+}
+#menu {
+	position:absolute;
+	left:0px;
+	top:64px;
+	width:100%;
+	height:25px;
+	z-index:4;
+}
+
+table.menu {
+	table-layout:fixed;
+	width:100%;
+	height:25px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: black;
+	background-image: url(/BOV/include/img/blockdefault.gif);
+	background-repeat: repeat-x;
+	background-position: center center;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFFFFF;
+}
+table.menu  td.item {
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+}
+#menu   a:link   {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	height: 100%;
+}
+#menu a:visited {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	height: 100%;
+	background-image: url(/BOV/include/img/blockdefault.gif);
+	background-repeat: repeat-x;
+}
+#menu a:hover {
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	width: 100%;
+	font-size: 13px;
+	letter-spacing: 0.1em;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	height: 100%;
+	background-image: url(/BOV/include/img/blockactive.gif);
+	background-repeat: repeat-x;
+}
+#body {
+	position:absolute;
+	left:0px;
+	top:89px;
+	width:100%;
+	z-index:1;
+	padding: 0px;
+	background-color:#FFFFFF;
+}
+a:link {
+	color: #007575;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #9D3737;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+.bodymain {
+	width: 800px;
+	padding-left: 50px;
+	padding-top: 25px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	background-color: #FFFFFF;
+}
+.bodyfooter {
+	width: 100%;
+	/*top:600px;*/
+	height: 50px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	border-top-width: thin;
+	border-top-style: solid;
+	border-top-color: #cccccc;
+	text-align: center;
+	position: fixed
+}
+body {
+	background-color: #FFFFFF;
+}
+h2 {
+	font-weight: bold;
+	color: #000000;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+h3,h4,h5 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+.bodypara {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	text-align: justify;
+	text-indent: 2em;
+}
+
+li {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+p {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+
+/* for alignment image only rajesh stuff */
+#wrapper {
+        left: 50%;
+        margin-left: -550px;
+        margin-bottom: 50px;
+        width: 1050px;
+        margin-top: -10px;
+        position : absolute;
+        background-color: blue;
+        height: auto;
+        min-height: 100%;
+        _height: 100%;
+}
+
+#rightwrap {
+        float: right;
+        width: 250px;
+        height: 100%;
+        display: inline;
+}
+#inputdiv{
+        float: right;
+        margin-top: 50px;
+        width: 250px;
+        left: 50px;
+        display: inline;
+}
+#wrapsearch_hspsform{
+        float: right;
+        top: 25px;
+        width: 250px;
+        display: block;
+        background-color:       #AFDCEC;
+        display: none;
+        padding : 5px;
+}
+#zoom{
+        width: 800px;
+        display: block;
+        margin-top: 610px;
+        position: absolute;
+        background-color:       #AFDCEC;
+}
+#controlPanel{
+        width: 800px;
+        display: block;
+        margin-top: 120px;
+        position: absolute;
+        background-color:       #AFDCEC;
+}
+#imagewrapper{
+        display:inline;
+        width: 800px;
+        z-index : 1;
+}
+#wrapresultdiv{
+        /*float: right;
+        right: 0px;*/
+        position: absolute;
+        background-color: #afdcec;
+        width: 260px;
+	height: 25px;
+        margin-top: 100px;
+	margin-left: 800px;
+        /*display: none;*/
+}
+#resultdiv{
+        padding-left: 15px;
+	float: right;
+}
+
+#wrapsearch_hspsform{
+        float: right;
+	position: absolute;
+        top: 25px;
+        width: 250px;
+        display: block;
+        background-color:       #AFDCEC;
+        display: none;
+        padding : 5px;
+	margin-top: 100px;
+	margin-left: 800px;
+}
+#search_hspsform{
+	background-color: #AFDCEC;
+	float: right;
+	width: 250px;
+}
+table.tab{
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: white;
+        valign: top;
+        align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+td.tab{
+	font-size: 12px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+th.tab, td.tab{
+        border: 1px solid black;
+        padding: 3px;
+	text-align: center;
+	valign: top;
+}
+th.tab{
+        background-color: #DCDCDC;
+	text-align: center;
+	valign: top;
+	font-size: 13px;
+}
+tr.tab{
+        background-color: white;
+}
+tr.highlight{
+        background-color: #B8CDDC;
+        cursor: pointer;
+        font-size:12px;
+}
+tr.hsp_highlight{
+        background-color: #B8CDDC;
+        cursor: pointer;
+        font-size:12px;
+}
+

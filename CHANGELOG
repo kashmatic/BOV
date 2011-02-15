@@ -1,0 +1,105 @@
+#########################################################
+## Copyright 2008 The Trustees of Indiana University
+##
+## Licensed under the Apache License, Version 2.0 (the "License");
+## you may not use this file except in compliance with the License.
+## You may obtain a copy of the License at
+##
+##      http://www.apache.org/licenses/LICENSE-2.0
+##
+## Unless required by applicable law or agreed to in writing, software
+## distributed under the License is distributed on an "AS IS" BASIS,
+## WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+## See the License for the specific language governing permissions and
+## limitations under the License.
+#########################################################
+
+Version 1.0.11 (07-18-2008)
+
+Bugs fixed
+- The filter by evalue works fine when we enter 0
+- Text in Index, Software and Contact page
+
+Version 1.0.10 (07-01-2008)
+
+New Features
+* Text in viewhits.cgi has been changed
+
+Bugs fixed
+* Email address in contact.cgi
+* The Progress bar doesnt start when no file is present.
+
+Version 1.0.9 (07-01-2008)
+
+Bugs fixed
+* File permissions for cgi scripts are restored
+* userPage.cgi script is updated
+
+Version 1.0.8 (06-28-2008)
+
+Bugs fixed
+* setup.sh works well under /usr/sun/bin/sh
+* userPage.cgi is updated
+* mysql syntax to connect remote database is fixed
+
+Version 1.0.7 (06-27-2008)
+
+New Features
+* Required parameters are checked in setup.sh
+* Local firectory contains only files which are absent/changed in src directory
+
+Bugs fixed
+* Text in setup.sh and INSTALL changed
+
+
+Version 1.0.6 (06-27-2008)
+
+New Features
+* The file system has been changed.
+
+
+Version 1.0.5 (06-26-2008)
+
+Bugs fixed
+* Image and uploaded file are not created in respective directories
+
+
+Version 1.0.4 (06-24-2008)
+
+Bugs fixed
+
+* The webpages are now working for IE 7
+* The 'view' alignment works fine in IE.
+* The README pages are changed to TUTORIAL page
+* The HSP image is now updated when a filter is applied.
+
+
+Version 1.0.3 (06-20.2008)
+
+Bugs fixed
+
+* The encryption of the email using a variable is done in parseBlast.cgi
+* An encryption variable is required for the execution of the setup.sh 
+* By clicking 'View' in the alignment column, the window now shows the alignment in FireFox 3RC1
+* While selecting a file for upload, the error message 'This field is required.' is no more displayed.
+* The README page has been renamed as HELP
+* There is no more different expiration days in the HELP page.
+* The images in the help file has been updated.
+* The License has been included in all the files.
+
+Version 1.0.2 (06-19-2008)
+
+Bugs fixed
+
+* The images directory no longer has write permissions for the apache server. 
+* The upload_dir directory no longer has write permissions for the apache server.
+* Remove 'Introduction' from index.html 
+* Replace the first paragraph of index.html with the first paragraph from http://gbrowse-dev.cgb.indiana.edu:8080/BOV/index_DQ.html 
+* viewhits.cgi - expiration time is hard coded at 60 days in error message 
+* index.html - expiration time is hard coded at 60 days in instructions. 
+* manageBOV.sql doesn't clean up the database. It removes one line from the project table, not the actual data. We must be careful not to delete the data if there are any current projects accessing it. And, what about images for expired projects? 
+* apache_uri variable mismatch. In setup.sh we give an example including http://, but in the BOV e-mail message, we prefix the variable with http://, so the message contains 
+
+  
+
+

@@ -1,0 +1,315 @@
+/* @import "light.css"; */
+.light { background:#FFF; color:#111; font:10pt Verdana, Arial, sans-serif; }
+.light a, a.light { color:#46C; outline:0; }
+.light a:visited, a.light:visited { color:#C44; }
+.light a:hover, a.light:hover, .light a:focus, a.light:focus, .light a:active, a.light:active { color:#000; } /* order lvhfa */
+.light fieldset { border:1px solid #CCC; }
+.light legend { color:#555; font:.8em Verdana, sans-serif; }
+.light button, button.light, .light input, input.light { padding:2px 4px; font:.9em Consolas, Verdana, sans-serif; }
+.light textarea, textarea.light { padding:2px 4px; font:.9em Consolas, Courier New, sans-serif; width:20em; height:5em; overflow:auto; }
+.light select, select.light { padding:3px 0 3px 4px; font:.9em Verdana, sans-serif; }
+.light label { font-weight:bold; }
+
+
+/* 
+@import "light.shadow.css";
+@import "light.resizable.css";
+@import "light.slider.css";
+@import "light.accordion.css";
+*/
+
+/* @import "light.tabs.css";
+Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.ui-tabs-nav, .ui-tabs-panel {
+    font-size: 11px;
+}
+.ui-tabs-nav {
+    list-style: none;
+    margin: 0;
+    border-bottom: 1px solid #444;
+    padding: 0 0 0 5px;
+}
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 0 0 1px;
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    float: left; /* fixes dir=ltr problem and other quirks IE */
+}
+.ui-tabs-nav a {
+    position: relative;
+    top: 1px;
+    z-index: 2;
+	font-weight: bold;
+	letter-spacing: 0.5 px;
+    border: 1px solid;
+    border-bottom: 0;
+    padding: 1px 0 0;
+    text-decoration: none;
+    white-space: nowrap; /* @ IE 6 */
+    outline: 0; /* @ Firefox, prevent dotted border after click */
+}
+.ui-tabs-nav a:link, .ui-tabs-nav a:visited {
+    border-color: #444;
+    background: #444;
+    color: #fff;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active {
+    border-color: #222;
+    background: #222;
+}
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited {
+    border-color: #666;
+    background: #aaa;
+}
+.ui-tabs-nav a span {    
+    display: block;
+    padding: 1px 13px 2px;
+    height: 15px; /* min-height in IE 6 */
+    min-height: 15px;
+    line-height: 15px;
+}
+*>.ui-tabs-nav a span { /* hide from IE 6 */
+    height: auto;
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-bottom: 3px;
+    background: #fffafa;
+	font-weight: bold;
+    color: #000; /* apply to span is required for IE 6 */
+}
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited, .ui-tabs-nav .ui-tabs-disabled a span {
+    border-color: #ddd;
+    background: #eee;
+    color: #bbb;
+}
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited,
+.ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    cursor: text;
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-unselect a:hover, .ui-tabs-nav .ui-tabs-unselect a:focus, .ui-tabs-nav .ui-tabs-unselect a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.ui-tabs-panel {
+    padding: 10px;
+    background: #fff; /* declare background color for container to avoid distorted fonts in IE while fading */
+    border: thin solid ; 
+}
+/*.ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}*/
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear @ IE 6 & IE 7 Quirks Mode */
+    display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  { /* auto clear @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+    display: inline-block;
+}
+
+/*
+@import "light.dialog.css";
+@import "light.tablesorter.css";
+*/
+
+
+/* @import "light.datepicker.css";
+Main Light Style Sheet for jQuery UI Datepicker */
+.light #datepicker_div, .light .datepicker_inline {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	width: 185px;
+}
+.light #datepicker_div {
+	display: none;
+	border: 1px solid #888;
+	z-index: 10;
+}
+.light .datepicker_inline {
+	float: left;
+	display: block;
+	border: 0;
+}
+.light .datepicker_dialog {
+	padding: 5px !important;
+	border: 4px ridge #DDD !important;
+}
+.light button.datepicker_trigger {
+	width: 25px;
+}
+.light img.datepicker_trigger {
+	margin: 2px;
+	vertical-align: middle;
+}
+.light .datepicker_prompt {
+	float: left;
+	padding: 2px;
+	background: #FFF;
+	color: #111;
+}
+*html .light .datepicker_prompt {
+	width: 185px;
+}
+.light .datepicker_control, .light .datepicker_links, .light .datepicker_header, .light .datepicker {
+	clear: both;
+	float: left;
+	width: 100%;
+	color: #111;
+}
+.light .datepicker_control {
+	background: #FFF;
+	padding: 2px 0px;
+}
+.light .datepicker_links {
+	background: #EEE;
+	padding: 2px 0px;
+}
+.light .datepicker_control, .light .datepicker_links {
+	font-weight: bold;
+	font-size: 80%;
+	letter-spacing: 1px;
+}
+.light .datepicker_links label {
+	padding: 2px 5px;
+	color: #888;
+}
+.light .datepicker_clear, .light .datepicker_prev {
+	float: left;
+	width: 34%;
+}
+.light .datepicker_current {
+	float: left;
+	width: 30%;
+	text-align: center;
+}
+.light .datepicker_close, .light .datepicker_next {
+	float: right;
+	width: 34%;
+	text-align: right;
+}
+.light .datepicker_header {
+	padding: 1px 0 3px;
+	background: #DDD;
+	text-align: center;
+	font-weight: bold;
+	height: 1.3em;
+}
+.light .datepicker_header select {
+	background: #DDD;
+	color: #111;
+	border: 0px;
+	font-weight: bold;
+}
+.light .datepicker {
+	background: #FFF;
+	text-align: center;
+	font-size: 100%;
+}
+.light .datepicker a {
+	display: block;
+	width: 100%;
+}
+.light .datepicker .datepicker_titleRow {
+	background: #CCC;
+}
+.light .datepicker .datepicker_daysRow {
+	background: #FFF;
+	color: #666;
+}
+.light .datepicker_weekCol {
+	background: #CCC;
+	color: #111;
+}
+.light .datepicker .datepicker_daysCell {
+	color: #111;
+	border: 1px solid #CCC;
+}
+.light #datepicker .datepicker_daysCell a {
+	display: block;
+}
+.light .datepicker .datepicker_weekEndCell {
+	background: #DDD;
+}
+.light .datepicker .datepicker_daysCellOver {
+	background: #CCC;
+	border: 1px solid #777;
+}
+.light .datepicker .datepicker_unselectable {
+	color: #888;
+}
+.light .datepicker_today {
+	background: #FCC !important;
+}
+.light .datepicker_currentDay {
+	background: #999 !important;
+}
+.light #datepicker_div a, .light .datepicker_inline a {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	background: none;
+	color: #111;
+}
+.light .datepicker_inline .datepicker_links a {
+	padding: 0 5px !important;
+}
+.light .datepicker_control a, .light .datepicker_links a {
+	padding: 2px 5px !important;
+	color: #111 !important;
+}
+.light .datepicker_titleRow a {
+	color: #111 !important;
+}
+.light .datepicker_control a: hover {
+	color: #333 !important;
+}
+.light .datepicker_links a: hover, .light .datepicker_titleRow a: hover {
+	background: #FFF !important;
+	color: #333 !important;
+}
+.light .datepicker_multi .datepicker {
+	border: 1px solid #DDD;
+}
+.light .datepicker_oneMonth {
+	float: left;
+	width: 185px;
+}
+.light .datepicker_newRow {
+	clear: left;
+}
+.light .datepicker_cover {
+	display: none;
+	display/**/: block;
+	position: absolute;
+	z-index: -1;
+	filter: mask();
+	top: -4px;
+	left: -4px;
+	width: 193px;
+	height: 200px;
+}
+
