@@ -37,7 +37,7 @@
 * POSIX
 * Storable
 
-### Database Setup 
+#### Database Setup 
 BOV requires a MySQL database to store data and generate results. By default, BOV will connect to MySQL installed on the local machine, using the username bov, and the database name microbial. To setup BOV with these default settings, issue the following commands from the unix command prompt.
 
 To create the username bov, without password
@@ -56,7 +56,7 @@ To create the database and give permissions to your user
 If you want to use different database settings, reference the MySQL documentation for instructions on how to configure the database.
 
 
-#### Installation
+## Installation
 ------------
 
 1. Download BOV from http://cgb.indiana.edu/files/downloads/Blast_Output_Viewer.tar.gz
@@ -71,33 +71,33 @@ If you want to use different database settings, reference the MySQL documentatio
 5. Execute the setup command to configure BOV, this creates two folders in the same 
 directory called 'cgi-bin' and 'htdocs'
 
-    setup.sh
+    `setup.sh`
 
 6. If you have set the 'lifetime' value in setup.sh for automatic expiration of results, a shell script will be created in
 
-    bin/clean_database.sh
+    `bin/clean_database.sh`
 
 To have this command executed automatically, you need to add the following entry to your crontab.
 
-    * 0 * * * sh /PATH/TO/clean_database.sh
+    `* 0 * * * sh /PATH/TO/clean_database.sh`
        
 7. Rename the htdocs directory to BOV and copy it to the directory your apache installation uses for html files. This directory is defined in your apache configuration file as 'DocumentRoot'. So if your apache configuration includes
 
-    DocumentRoot "/var/www/htdocs"
+    `DocumentRoot "/var/www/htdocs"`
 
 you would execute
 
-    cp -rp htdocs /var/www/htdocs/BOV
+    `cp -rp htdocs /var/www/htdocs/BOV`
 
 8. Rename the cgi-bin directory to BOV and copy it to the directory your apache installation uses for cgi-bin executables. This may be defined as 'ScriptAlias' in your apache configuration.
 
-    ScriptAlias /cgi-bin/ "/var/www/cgi-bin"
+    `ScriptAlias /cgi-bin/ "/var/www/cgi-bin"`
 
 in which case you would execute
 
-    cp -rp cgi-bin /var/www/cgi-bin/BOV
+    `cp -rp cgi-bin /var/www/cgi-bin/BOV`
 
 If your apache configuration does not include ScriptAlias, then append cgi-bin to th
 e DocumentRoot, e.g.
 
-    cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV
+    `cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV`
