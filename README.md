@@ -1,7 +1,7 @@
 ## Publication
 -----------------
 * Gollapudi, R., Revanna, K.V., Hemmerich, C., Schaack, S. & Dong, Q. (2008) BOV- A Web-based BLAST Output Visualization Tool. BMC Genomics 9, 414. This little toy was ranked as a "Highly accessed" paper by BioMed Central.
-* [PUBMED] (http://www.ncbi.nlm.nih.gov/pubmed/18793422)
+* [PUBMED](http://www.ncbi.nlm.nih.gov/pubmed/18793422)
 
 ## Setup
 -----------------
