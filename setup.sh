@@ -34,7 +34,7 @@
 #
 # e.g. support_email="help@myorg.org"
 #
-support_email="kashi.revanna@unt.edu"
+support_email=""
 
 ## Sendmail 
 #
@@ -42,7 +42,7 @@ support_email="kashi.revanna@unt.edu"
 #
 # e.g. sendmail_path="/usr/sbin/sendmail"
 #
-sendmail_path="/usr/sbin/sendmail"
+sendmail_path=""
 
 ## Email Encryption
 #
@@ -53,7 +53,7 @@ sendmail_path="/usr/sbin/sendmail"
 #
 # e.g. email_variable="2H5TQY"
 #
-email_variable="P82KNT"
+email_variable=""
 
 ## Base Apache URI
 #
@@ -62,7 +62,7 @@ email_variable="P82KNT"
 #
 # e.g. apache_uri = "http://www.myorg.org"
 #
-apache_uri="http://bioinfo.cas.unt.edu"
+apache_uri=""
 
 ############################################################
 ##
