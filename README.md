@@ -102,10 +102,10 @@ e DocumentRoot, e.g.
 
     `cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV`
 
-### Authors
+## Authors
 -----------
-Kashi Vishwanath Revanna
-Rajesh Gollapudi
-Chris Hemmerich
-Sarah Schaack
-Qunfeng Dong
+* Rajesh Gollapudi
+* Kashi Vishwanath Revanna
+* Chris Hemmerich
+* Sarah Schaack
+* Qunfeng Dong
