@@ -91,7 +91,7 @@ you would execute
 
 8. Rename the cgi-bin directory to BOV and copy it to the directory your apache installation uses for cgi-bin executables. This may be defined as 'ScriptAlias' in your apache configuration.
 
-    ScriptAlias /cgi-bin/ "/var/www/cgi-bin"
+    `ScriptAlias /cgi-bin/ "/var/www/cgi-bin"`
 
 in which case you would execute
 
