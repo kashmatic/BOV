@@ -63,7 +63,7 @@ If you want to use different database settings, reference the MySQL documentatio
 
 2. Uncompress BOV using the command 
 
-> `tar -zxvf Blast_Output_Viewer.tar.gz`
+> tar -zxvf Blast_Output_Viewer.tar.gz
 
 3. Edit the setup.sh to customize BOV for your location. You must set the parameters under "REQUIRED PARAMETERS". If you did not use the default database settings, you must also define the connection information under "OPTIONAL PARAMETERS".
 
@@ -71,11 +71,11 @@ If you want to use different database settings, reference the MySQL documentatio
 5. Execute the setup command to configure BOV, this creates two folders in the same 
 directory called 'cgi-bin' and 'htdocs'
 
-> `setup.sh`
+> setup.sh
 
 6. If you have set the 'lifetime' value in setup.sh for automatic expiration of results, a shell script will be created in
 
-> `bin/clean_database.sh`
+> bin/clean_database.sh
 
 To have this command executed automatically, you need to add the following entry to your crontab.
 
@@ -83,7 +83,7 @@ To have this command executed automatically, you need to add the following entry
        
 7. Rename the htdocs directory to BOV and copy it to the directory your apache installation uses for html files. This directory is defined in your apache configuration file as 'DocumentRoot'. So if your apache configuration includes
 
-> `DocumentRoot "/var/www/htdocs"`
+> DocumentRoot "/var/www/htdocs"
 
 you would execute
 
@@ -91,7 +91,7 @@ you would execute
 
 8. Rename the cgi-bin directory to BOV and copy it to the directory your apache installation uses for cgi-bin executables. This may be defined as 'ScriptAlias' in your apache configuration.
 
-> `ScriptAlias /cgi-bin/ "/var/www/cgi-bin"`
+> ScriptAlias /cgi-bin/ "/var/www/cgi-bin"
 
 in which case you would execute
 
@@ -100,7 +100,7 @@ in which case you would execute
 If your apache configuration does not include ScriptAlias, then append cgi-bin to th
 e DocumentRoot, e.g.
 
-> `cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV`
+> cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV
 
 ## Authors
 -----------
