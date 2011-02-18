@@ -79,7 +79,7 @@ directory called 'cgi-bin' and 'htdocs'
 
 To have this command executed automatically, you need to add the following entry to your crontab.
 
-> * 0 * * * sh /PATH/TO/clean_database.sh
+> &#042; 0 * * * sh /PATH/TO/clean_database.sh
        
 7. Rename the htdocs directory to BOV and copy it to the directory your apache installation uses for html files. This directory is defined in your apache configuration file as 'DocumentRoot'. So if your apache configuration includes
 
