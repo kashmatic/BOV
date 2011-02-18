@@ -42,16 +42,16 @@ BOV requires a MySQL database to store data and generate results. By default, BO
 
 To create the username bov, without password
 
-    mysql -uroot -p password -e 'create user bov@localhost'
+> mysql -uroot -p password -e 'create user bov@localhost'
 
 With password
 
-    mysql -uroot -p password -e 'create user bov@localhost identified by password'
+> mysql -uroot -p password -e 'create user bov@localhost identified by password'
 
 To create the database and give permissions to your user
     
-    mysql -uroot -p password -e 'create database microbial'
-    mysql -uroot -p password -e 'grant select,insert,create,drop on microbial.* to bov@localhost'
+> mysql -uroot -p password -e 'create database microbial'
+> mysql -uroot -p password -e 'grant select,insert,create,drop on microbial.* to bov@localhost'
 
 If you want to use different database settings, reference the MySQL documentation for instructions on how to configure the database.
 
