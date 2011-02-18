@@ -101,6 +101,10 @@ If your apache configuration does not include ScriptAlias, then append cgi-bin t
 
 > cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV
 
+## URL
+-----------------
+http://<apache-uri>/BOV
+
 ## Authors
 -----------
 * Rajesh Gollapudi
