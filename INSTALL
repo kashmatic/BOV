@@ -123,3 +123,7 @@ in which case you would execute
 If your apache configuration does not include ScriptAlias, then append cgi-bin to the DocumentRoot, e.g.
 
  # cp -rp cgi-bin /var/www/htdocs/cgi-bin/BOV
+
+8. This completes the installation. You can now access BOV using the following URL
+
+http://<localhost or www.example.com>/BOV
